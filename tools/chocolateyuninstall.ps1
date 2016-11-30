@@ -2,7 +2,7 @@
 
 
 $packageName = 'splunkforwarder'
-$registryUninstallerKeyName = '{ADCAD08D-92F7-42BB-956E-D558F8FFBF14}' #ensure this is the value in the registry
+$registryUninstallerKeyName = '{5E5CC6A6-6A6B-4B13-BDD5-F64B3FE90634}' #ensure this is the value in the registry
 $installerType = 'MSI'
 $silentArgs = "$registryUninstallerKeyname /quiet"
 $validExitCodes = @(0)
