@@ -1,21 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
-<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
-    <id>splunkforwarder</id>
+    <id>splunk-universalforwarder</id>
     <title>Splunk Universal Forwarder</title>
-    <version>6.5.1</version>
+    <version>6.6.2</version>
     <authors>Splunk, Inc</authors>
-    <owners>Robert Labrie, Jeffrey Bernt</owners>
+    <owners>Jeffrey Bernt</owners>
     <summary>Splunk Universal Forwarder</summary>
     <description>The Splunk Universal Forwarder is a component of Splunk to collect data on machine and forward it to an indexer.
 	
 	It's a good idea to specify either a RECEIVING_INDEXER or DEPLOYMENT_SERVER. You might do something like:
-	choco install splunkforwarder --params="RECEIVING_INDEXER=somehost:9997"
+	choco install splunk-universalforwarder --params="RECEIVING_INDEXER=somehost:9997 DEPLOYMENT_SERVER=depserver:8089"
 	
 	Details about all the parameters are at the Splunk docs:	
-	http://docs.splunk.com/Documentation/Splunk/6.3.8/Forwarding/DeployaWindowsdfviathecommandline
+	http://docs.splunk.com/Documentation/Splunk/latest/Admin/DeployingSplunkonWindows
 	
 	The GitHub home for this package is: https://github.com/dagryph/chocolatey-splunkforwarder
     </description>
@@ -24,12 +23,7 @@
     <copyright>Splunk, Inc</copyright>
     <licenseUrl>http://www.splunk.com/en_us/legal/splunk-software-license-agreement.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/tnwinc/chocolatey-splunkforwarder/master/splunkforwarder.png</iconUrl>
-    <!--<dependencies>
-      <dependency id="" version="__VERSION__" />
-      <dependency id="" />
-    </dependencies>-->
-    <releaseNotes></releaseNotes>
+    <iconUrl>https://cdn.rawgit.com/dagryph/chocolatey-splunkforwarder/master/splunkforwarder.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
