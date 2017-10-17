@@ -4,21 +4,24 @@
   <metadata>
     <id>splunk-universalforwarder</id>
     <title>Splunk Universal Forwarder</title>
-    <version>6.6.2</version>
+    <version>6.6.3</version>
     <authors>Splunk, Inc</authors>
     <owners>Jeffrey Bernt</owners>
     <summary>Splunk Universal Forwarder</summary>
     <description>The Splunk Universal Forwarder is a component of Splunk to collect data on machine and forward it to an indexer.
-	
+
 	It's a good idea to specify either a RECEIVING_INDEXER or DEPLOYMENT_SERVER. You might do something like:
 	choco install splunk-universalforwarder --params="RECEIVING_INDEXER=somehost:9997 DEPLOYMENT_SERVER=depserver:8089"
-	
-	Details about all the parameters are at the Splunk docs:	
+
+	Details about all the parameters are at the Splunk docs:
 	http://docs.splunk.com/Documentation/Splunk/latest/Admin/DeployingSplunkonWindows
-	
+
 	The GitHub home for this package is: https://github.com/dagryph/chocolatey-splunkforwarder
     </description>
     <projectUrl>http://www.splunk.com</projectUrl>
+    <docsUrl>http://docs.splunk.com/Documentation/Splunk/latest/Admin/DeployingSplunkonWindows</docsUrl>
+    <projectSourceUrl>https://github.com/dagryph/chocolatey-splunkforwarder</projectSourceUrl>
+    <releaseNotes>http://docs.splunk.com/Documentation/Forwarder/6.6.3/Forwarder/Fixedissues</releaseNotes>
     <tags>splunkforwarder admin</tags>
     <copyright>Splunk, Inc</copyright>
     <licenseUrl>http://www.splunk.com/en_us/legal/splunk-software-license-agreement.html</licenseUrl>
