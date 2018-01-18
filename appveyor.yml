@@ -1,0 +1,2 @@
+install:
+  - cinst splunk-universalforwarder --version 7.0.1
