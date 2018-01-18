@@ -1,2 +1,4 @@
-install:
-  - cinst splunk-universalforwarder --version 7.0.1
+build_script:
+- ps: choco pack
+test_script:
+- cmd: testall.cmd
